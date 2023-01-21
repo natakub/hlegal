@@ -4,6 +4,34 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="preload"
+            href="fonts/montserrat-v25-latin_cyrillic-700.woff2"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/montserrat-v25-latin_cyrillic-700italic.woff2"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/montserrat-v25-latin_cyrillic-italic.woff2"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/montserrat-v25-latin_cyrillic-regular.woff2"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
         <link rel="stylesheet" href="css/style.css" />
         <title>hlegal</title>
     </head>
@@ -16,6 +44,7 @@
                             <a
                                 class="header__lang-link header__lang-link_on-dark"
                                 href="#"
+                                aria-label="change language"
                                 >ук</a
                             >
                         </li>
@@ -23,6 +52,7 @@
                             <a
                                 class="header__lang-link header__lang-link_on-dark"
                                 href="#"
+                                aria-label="change language"
                                 >pl</a
                             >
                         </li>
@@ -30,6 +60,7 @@
                             <a
                                 class="header__lang-link header__lang-link_on-dark active"
                                 href="#"
+                                aria-label="change language"
                                 >en</a
                             >
                         </li>
@@ -45,7 +76,7 @@
                         >
                     </div>
                     <div class="dot-separator header__fb-icon">
-                        <a href="#">
+                        <a href="#" aria-label="facebook link">
                             <svg
                                 width="24"
                                 height="25"
@@ -72,6 +103,7 @@
                 </div>
                 <nav class="header__menu">
                     <button
+                        aria-label="close/open menu"
                         type="button"
                         class="btn-burger btn-burger_white"
                     ></button>
@@ -121,7 +153,11 @@
                     <h1 class="top-section__title">
                         you legal solutions provider
                     </h1>
-                    <a class="top-section__scroll-link" href="#qualities">
+                    <a
+                        class="top-section__scroll-link"
+                        href="#qualities"
+                        aria-label="scroll to qualities"
+                    >
                         <svg
                             width="42"
                             height="42"
@@ -387,13 +423,31 @@
                 </ul>
                 <ul class="dots">
                     <li class="dots__item active">
-                        <button class="dots__button" type="button">1</button>
+                        <button
+                            aria-label="slider navigation button"
+                            class="dots__button"
+                            type="button"
+                        >
+                            1
+                        </button>
                     </li>
                     <li class="dots__item">
-                        <button class="dots__button" type="button">2</button>
+                        <button
+                            aria-label="slider navigation button"
+                            class="dots__button"
+                            type="button"
+                        >
+                            2
+                        </button>
                     </li>
                     <li class="dots__item">
-                        <button class="dots__button" type="button">3</button>
+                        <button
+                            aria-label="slider navigation button"
+                            class="dots__button"
+                            type="button"
+                        >
+                            3
+                        </button>
                     </li>
                 </ul>
             </section>
@@ -612,7 +666,7 @@
                         </div>
                         <div class="footer__contact-item">
                             <div class="footer__fb-link">
-                                <a href="#">
+                                <a href="#" aria-label="facebook link">
                                     <svg
                                         width="38"
                                         height="38"

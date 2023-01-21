@@ -4,6 +4,34 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="preload"
+            href="fonts/montserrat-v25-latin_cyrillic-700.woff2"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/montserrat-v25-latin_cyrillic-700italic.woff2"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/montserrat-v25-latin_cyrillic-italic.woff2"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/montserrat-v25-latin_cyrillic-regular.woff2"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
         <link rel="stylesheet" href="css/style.css" />
         <title>team</title>
     </head>
@@ -15,6 +43,7 @@
                         <a
                             class="header__lang-link header__lang-link_on-white"
                             href="#"
+                            aria-label="change language"
                             >pl</a
                         >
                     </li>
@@ -22,6 +51,7 @@
                         <a
                             class="header__lang-link header__lang-link_on-white"
                             href="#"
+                            aria-label="change language"
                             >ua</a
                         >
                     </li>
@@ -29,6 +59,7 @@
                         <a
                             class="header__lang-link header__lang-link_on-dark active"
                             href="#"
+                            aria-label="change language"
                             >en</a
                         >
                     </li>
@@ -42,7 +73,7 @@
                     >
                 </div>
                 <div class="dot-separator header__fb-icon">
-                    <a href="#">
+                    <a href="#" aria-label="facebook link">
                         <svg
                             width="24"
                             height="25"
@@ -70,6 +101,7 @@
             </div>
             <nav class="header__menu">
                 <button
+                    aria-label="close/open menu"
                     type="button"
                     class="btn-burger btn-burger_dark"
                 ></button>
@@ -375,7 +407,7 @@
                         </div>
                         <div class="footer__contact-item">
                             <div class="footer__fb-link">
-                                <a href="#">
+                                <a href="#" aria-label="facebook link">
                                     <svg
                                         width="38"
                                         height="38"

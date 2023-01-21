@@ -1581,9 +1581,12 @@ a:hover {
 
 .about-team {
   position: relative;
-  background: url(../img/about-team-768.jpg) no-repeat center, linear-gradient(264.71deg, #f01432 0%, #323264 29.69%);
+  background: linear-gradient(264.71deg, #f01432 0%, #323264 29.69%);
   background-size: cover;
-  height: 114px;
+}
+
+.about-team__img {
+  display: block;
 }
 
 .about-team__text {
@@ -1603,10 +1606,6 @@ a:hover {
 }
 
 @media (min-width: 768px) {
-  .about-team {
-    background-image: url(../img/about-team-992.jpg);
-    height: 233px;
-  }
   .about-team__text {
     font-size: 46px;
     letter-spacing: 63px;
@@ -1616,10 +1615,6 @@ a:hover {
 }
 
 @media (min-width: 992px) {
-  .about-team {
-    background-image: url(../img/about-team-1200.jpg);
-    height: 311px;
-  }
   .about-team__text {
     font-size: 86px;
     line-height: 105px;
@@ -1627,10 +1622,6 @@ a:hover {
 }
 
 @media (min-width: 1200px) {
-  .about-team {
-    background-image: url(../img/about-team-1920.jpg);
-    height: 438px;
-  }
   .about-team__text {
     font-size: 96px;
     line-height: 117px;

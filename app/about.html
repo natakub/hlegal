@@ -4,6 +4,34 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="preload"
+            href="fonts/montserrat-v25-latin_cyrillic-700.woff2"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/montserrat-v25-latin_cyrillic-700italic.woff2"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/montserrat-v25-latin_cyrillic-italic.woff2"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/montserrat-v25-latin_cyrillic-regular.woff2"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
         <link rel="stylesheet" href="css/style.css" />
         <title>about us</title>
     </head>
@@ -15,6 +43,7 @@
                         <a
                             class="header__lang-link header__lang-link_on-white"
                             href="#"
+                            aria-label="change language"
                             >pl</a
                         >
                     </li>
@@ -22,6 +51,7 @@
                         <a
                             class="header__lang-link header__lang-link_on-white"
                             href="#"
+                            aria-label="change language"
                             >ua</a
                         >
                     </li>
@@ -29,6 +59,7 @@
                         <a
                             class="header__lang-link header__lang-link_on-dark active"
                             href="#"
+                            aria-label="change language"
                             >en</a
                         >
                     </li>
@@ -42,7 +73,7 @@
                     >
                 </div>
                 <div class="dot-separator header__fb-icon">
-                    <a href="#">
+                    <a href="#" aria-label="facebook link">
                         <svg
                             width="24"
                             height="25"
@@ -70,6 +101,7 @@
             </div>
             <nav class="header__menu">
                 <button
+                    aria-label="close/open menu"
                     type="button"
                     class="btn-burger btn-burger_dark"
                 ></button>
@@ -168,6 +200,35 @@
                 </div>
             </section>
             <section class="about-team container container_lg">
+                <picture>
+                    <source
+                        media="(min-width:1200px)"
+                        srcset="
+                            img/about-team-1920.jpg    1x,
+                            img/about-team-1920@2x.jpg 2x
+                        "
+                    />
+                    <source
+                        media="(min-width:992px)"
+                        srcset="
+                            img/about-team-1200.jpg    1x,
+                            img/about-team-1200@2x.jpg 2x
+                        "
+                    />
+                    <source
+                        media="(min-width:768px)"
+                        srcset="
+                            img/about-team-992.jpg    1x,
+                            img/about-team-992@2x.jpg 2x
+                        "
+                    />
+                    <img
+                        class="about-team__img img-responsive"
+                        src="img/about-team-768.jpg"
+                        srcset="img/about-team-768@2x.jpg"
+                        alt="picture of group of people"
+                    />
+                </picture>
                 <h2 class="about-team__text">team</h2>
             </section>
             <section class="about-quality container container_sm">
@@ -237,33 +298,57 @@
                     </ul>
                     <ul class="dots achievements__dots">
                         <li class="dots__item active">
-                            <button class="dots__button" type="button">
+                            <button
+                                aria-label="slider navigation button"
+                                class="dots__button"
+                                type="button"
+                            >
                                 1
                             </button>
                         </li>
                         <li class="dots__item">
-                            <button class="dots__button" type="button">
+                            <button
+                                aria-label="slider navigation button"
+                                class="dots__button"
+                                type="button"
+                            >
                                 2
                             </button>
                         </li>
                         <li class="dots__item">
-                            <button class="dots__button" type="button">
+                            <button
+                                aria-label="slider navigation button"
+                                class="dots__button"
+                                type="button"
+                            >
                                 3
                             </button>
                         </li>
                         <li class="dots__item hide">
-                            <button class="dots__button" type="button">
-                                3
+                            <button
+                                aria-label="slider navigation button"
+                                class="dots__button"
+                                type="button"
+                            >
+                                4
                             </button>
                         </li>
                         <li class="dots__item hide">
-                            <button class="dots__button" type="button">
-                                3
+                            <button
+                                aria-label="slider navigation button"
+                                class="dots__button"
+                                type="button"
+                            >
+                                5
                             </button>
                         </li>
                         <li class="dots__item hide">
-                            <button class="dots__button" type="button">
-                                3
+                            <button
+                                aria-label="slider navigation button"
+                                class="dots__button"
+                                type="button"
+                            >
+                                6
                             </button>
                         </li>
                     </ul>
@@ -286,7 +371,7 @@
                         </div>
                         <div class="footer__contact-item">
                             <div class="footer__fb-link">
-                                <a href="#">
+                                <a href="#" aria-label="facebook link">
                                     <svg
                                         width="38"
                                         height="38"

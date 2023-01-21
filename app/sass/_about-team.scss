@@ -1,9 +1,12 @@
 .about-team {
     position: relative;
-    background: url(../img/about-team-768.jpg) no-repeat center,
-        $gradientBgAboutTeam;
+    background: $gradientBgAboutTeam;
     background-size: cover;
-    height: 114px;
+    // height: 144px;
+
+    &__img {
+        display: block;
+    }
 
     &__text {
         position: absolute;
@@ -23,8 +26,8 @@
 
 @media (min-width: 768px) {
     .about-team {
-        background-image: url(../img/about-team-992.jpg);
-        height: 233px;
+        // background-image: url(../img/about-team-992.jpg);
+        // height: 233px;
 
         &__text {
             font-size: 46px;
@@ -37,8 +40,8 @@
 
 @media (min-width: 992px) {
     .about-team {
-        background-image: url(../img/about-team-1200.jpg);
-        height: 311px;
+        // background-image: url(../img/about-team-1200.jpg);
+        // height: 311px;
 
         &__text {
             font-size: 86px;
@@ -49,8 +52,8 @@
 
 @media (min-width: 1200px) {
     .about-team {
-        background-image: url(../img/about-team-1920.jpg);
-        height: 438px;
+        // background-image: url(../img/about-team-1920.jpg);
+        // height: 438px;
 
         &__text {
             font-size: 96px;
