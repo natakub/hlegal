@@ -3,10 +3,11 @@
 
     &__text {
         @include textContent;
+        padding-bottom: 10px;
+    }
 
-        p {
-            padding-bottom: 30px;
-        }
+    &__par {
+        padding-bottom: 20px;
     }
 
     &__title {
@@ -16,7 +17,7 @@
 
 @media (min-width: 768px) {
     .about-quality {
-        padding: 60px 30px;
+        padding: 60px 30px 30px;
     }
 }
 

@@ -539,7 +539,7 @@ a:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 -15px;
-  padding: 15px 15px;
+  padding: 10px 15px;
 }
 
 .header__top-line_on-dark {
@@ -607,6 +607,7 @@ a:hover {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  padding-top: 8px;
 }
 
 .header__menu {
@@ -687,7 +688,7 @@ a:hover {
     fill: #f0145a;
   }
   .header__logo-box {
-    padding: 30px 0;
+    padding: 16px 0 26px;
   }
   .header__logo img {
     width: 130px;
@@ -763,6 +764,7 @@ a:hover {
     grid-template-columns: 1fr auto;
     grid-template-rows: -webkit-min-content -webkit-min-content;
     grid-template-rows: min-content min-content;
+    padding-top: 42px;
   }
   .header__top-line {
     grid-column: 2 / 3;
@@ -792,6 +794,12 @@ a:hover {
   }
 }
 
+@media (min-width: 1200px) {
+  .header {
+    padding-top: 50px;
+  }
+}
+
 .footer {
   background-color: #f5f5fa;
   text-align: center;
@@ -799,7 +807,7 @@ a:hover {
 
 .footer__box {
   padding: 30px 0;
-  border-top: 4px solid #e6e6f0;
+  border-top: 2px solid #e6e6f0;
 }
 
 .footer__box_no-border {
@@ -867,6 +875,9 @@ a:hover {
 }
 
 @media (min-width: 768px) {
+  .footer__box {
+    padding: 32px 0;
+  }
   .footer__wrap {
     max-width: 400px;
     margin: 0 auto;
@@ -934,7 +945,7 @@ a:hover {
   line-height: 46px;
   max-width: 417px;
   margin: 0 auto;
-  padding: 0 0 159px 30px;
+  padding: 0 0 157px 30px;
   text-align: center;
 }
 
@@ -957,7 +968,7 @@ a:hover {
 
 @media (min-width: 768px) {
   .top-section {
-    padding: 264px 0 30px;
+    padding: 270px 0 30px;
   }
   .top-section__title {
     padding: 0 0 417px 0;
@@ -967,7 +978,7 @@ a:hover {
 
 @media (min-width: 992px) {
   .top-section {
-    padding: 240px 0 30px;
+    padding: 246px 0 30px;
   }
   .top-section__title {
     padding: 0 0 289px 0;
@@ -976,7 +987,7 @@ a:hover {
 
 @media (min-width: 1200px) {
   .top-section {
-    padding: 256px 0 30px;
+    padding: 262px 0 30px;
   }
   .top-section__title {
     padding: 0 0 305px 0;
@@ -986,7 +997,7 @@ a:hover {
 .qualities {
   margin: 0 auto;
   max-width: 1080px;
-  padding-top: 30px;
+  padding-top: 26px;
 }
 
 .qualities__tab-switcher {
@@ -1061,7 +1072,7 @@ a:hover {
 
 @media (min-width: 768px) {
   .qualities {
-    padding-top: 60px;
+    padding-top: 54px;
   }
   .qualities__tab-switcher {
     padding: 0 0 60px 0;
@@ -1129,6 +1140,10 @@ a:hover {
   padding: 10px 0 26px 0;
 }
 
+.services__title_pt {
+  padding: 0 0 26px 0;
+}
+
 .services__wrap {
   list-style: none;
   padding-left: 0;
@@ -1154,6 +1169,9 @@ a:hover {
   }
   .services__title {
     padding: 10px 0 60px 0;
+  }
+  .services__title_pt {
+    padding: 0 0 55px 0;
   }
   .services__wrap {
     display: grid;
@@ -1184,7 +1202,7 @@ a:hover {
   border-radius: 12px;
   list-style: none;
   padding-left: 0;
-  margin-bottom: 30px;
+  margin-bottom: 21px;
 }
 
 .team__slider-item {
@@ -1201,7 +1219,7 @@ a:hover {
 }
 
 .team__slider-content {
-  padding: 30px 30px;
+  padding: 23px 30px 30px;
 }
 
 .team__slider-text {
@@ -1246,6 +1264,9 @@ a:hover {
     width: 400px;
     -o-object-fit: none;
        object-fit: none;
+  }
+  .team__slider-content {
+    padding: 28px 30px 30px;
   }
 }
 
@@ -1372,7 +1393,7 @@ a:hover {
 }
 
 .publications__text-wrap {
-  padding: 30px 30px;
+  padding: 26px 30px 30px;
 }
 
 .publications__link {
@@ -1404,6 +1425,7 @@ a:hover {
   }
   .publications__title {
     padding-top: 10px;
+    padding-bottom: 29px;
   }
   .publications__list {
     display: grid;
@@ -1548,7 +1570,7 @@ a:hover {
   position: relative;
   background: url(../img/about-team-768.jpg) no-repeat center, linear-gradient(264.71deg, #f01432 0%, #323264 29.69%);
   background-size: cover;
-  height: 144px;
+  height: 114px;
 }
 
 .about-team__text {
@@ -1611,10 +1633,11 @@ a:hover {
   font-weight: 400;
   font-size: 19px;
   line-height: 30px;
+  padding-bottom: 10px;
 }
 
-.about-quality__text p {
-  padding-bottom: 30px;
+.about-quality__par {
+  padding-bottom: 20px;
 }
 
 .about-quality__title {
@@ -1627,7 +1650,7 @@ a:hover {
 
 @media (min-width: 768px) {
   .about-quality {
-    padding: 60px 30px;
+    padding: 60px 30px 30px;
   }
 }
 
@@ -1659,7 +1682,7 @@ a:hover {
 
 .achievements__slider {
   list-style: none;
-  padding: 0 0 30px 0;
+  padding: 0 0 22px 0;
 }
 
 .achievements__slider .hide {
@@ -1707,6 +1730,9 @@ a:hover {
 }
 
 @media (min-width: 992px) {
+  .achievements__slider-item {
+    height: 110px;
+  }
   .achievements__slider-img {
     height: 60px;
   }
@@ -1743,7 +1769,7 @@ a:hover {
 }
 
 .ecommerce__consultation-text p {
-  padding-bottom: 28px;
+  padding-bottom: 23px;
 }
 
 .ecommerce__services-list {

@@ -5,6 +5,10 @@
     &__title {
         @include gradientTitle;
         padding: 10px 0 26px 0;
+
+        &_pt {
+            padding: 0 0 26px 0;
+        }
     }
 
     &__wrap {
@@ -33,6 +37,10 @@
 
         &__title {
             padding: 10px 0 60px 0;
+
+            &_pt {
+                padding: 0 0 55px 0;
+            }
         }
 
         &__wrap {
