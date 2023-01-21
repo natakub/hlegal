@@ -20,6 +20,8 @@
         font-size: 0;
         width: 16px;
         height: 16px;
+        transition-duration: 300ms;
+        transition-property: background-color;
 
         &:hover {
             background-color: $colorHoverDot;

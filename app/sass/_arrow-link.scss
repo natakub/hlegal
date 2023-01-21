@@ -16,7 +16,7 @@
         width: 12px;
         height: 12px;
         transition-duration: 300ms;
-        transition-property: background-image;
+        transition-property: all;
     }
 
     &_no-marg::after {
@@ -28,6 +28,7 @@
 
         &::after {
             background-image: url(../img/arrow-icon-hover.svg);
+            transform: translateX(5px);
         }
     }
 

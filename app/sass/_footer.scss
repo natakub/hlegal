@@ -41,6 +41,11 @@
             display: block;
         }
 
+        path {
+            transition-duration: 300ms;
+            transition-property: fill;
+        }
+
         &:hover path {
             fill: $colorAccent;
         }

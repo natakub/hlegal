@@ -364,8 +364,8 @@ a:hover {
   height: 12px;
   -webkit-transition-duration: 300ms;
           transition-duration: 300ms;
-  -webkit-transition-property: background-image;
-  transition-property: background-image;
+  -webkit-transition-property: all;
+  transition-property: all;
 }
 
 .arrow-link_no-marg::after {
@@ -378,6 +378,8 @@ a:hover {
 
 .arrow-link:hover::after {
   background-image: url(../img/arrow-icon-hover.svg);
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
 }
 
 .title {
@@ -506,6 +508,10 @@ a:hover {
   font-size: 0;
   width: 16px;
   height: 16px;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
 }
 
 .dots__button:hover {
@@ -857,6 +863,13 @@ a:hover {
 
 .footer__fb-link a {
   display: block;
+}
+
+.footer__fb-link path {
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+  -webkit-transition-property: fill;
+  transition-property: fill;
 }
 
 .footer__fb-link:hover path {
