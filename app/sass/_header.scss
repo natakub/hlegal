@@ -48,12 +48,15 @@
         border-radius: 6px;
         text-decoration: none;
         text-transform: uppercase;
+        transition-duration: 300ms;
+        transition-property: background-color;
 
         &_on-dark {
             color: $colorWhite;
 
             &:hover {
                 background-color: $colorTransparentHover;
+                color: $colorWhite;
             }
         }
 
@@ -62,7 +65,12 @@
 
             &:hover {
                 background-color: $colorBg;
+                color: $colorText;
             }
+        }
+
+        &:active {
+            color: $colorAccent;
         }
     }
 
@@ -136,6 +144,11 @@
                 display: block;
             }
 
+            path {
+                transition-duration: 300ms;
+                transition-property: fill;
+            }
+
             &:hover path {
                 fill: $colorAccent;
             }
@@ -175,6 +188,7 @@
 
             a.active {
                 border-bottom: 2px solid $colorAccent;
+                color: $colorAccent;
                 padding-bottom: 3px;
             }
         }
@@ -186,19 +200,33 @@
             line-height: 20px;
             padding: 0 0 3px;
             border-radius: 0;
+            transition-duration: 300ms;
+            transition-property: all;
+
+            &_on-dark {
+                color: $colorWhite;
+
+                &:hover {
+                    background-color: transparent;
+                    border-bottom: 2px solid $colorWhite;
+                    color: $colorWhite;
+                }
+            }
+
+            &_on-white {
+                color: $colorLink;
+
+                &:hover {
+                    background-color: transparent;
+                    border-bottom: 2px solid $colorLink;
+                    color: $colorLink;
+                }
+            }
 
             &:active {
                 background-color: transparent;
                 border-bottom: 2px solid $colorAccent;
                 color: $colorAccent;
-            }
-
-            &_on-dark {
-                color: $colorWhite;
-            }
-
-            &_on-white {
-                color: $colorLink;
             }
         }
     }

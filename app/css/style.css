@@ -572,6 +572,10 @@ a:hover {
   border-radius: 6px;
   text-decoration: none;
   text-transform: uppercase;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
 }
 
 .header__lang-link_on-dark {
@@ -580,6 +584,7 @@ a:hover {
 
 .header__lang-link_on-dark:hover {
   background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
 }
 
 .header__lang-link_on-white {
@@ -588,6 +593,11 @@ a:hover {
 
 .header__lang-link_on-white:hover {
   background-color: #f5f5fa;
+  color: #b3b3ba;
+}
+
+.header__lang-link:active {
+  color: #f0145a;
 }
 
 .header__logo-box {
@@ -667,6 +677,12 @@ a:hover {
   .header__fb-icon a {
     display: block;
   }
+  .header__fb-icon path {
+    -webkit-transition-duration: 300ms;
+            transition-duration: 300ms;
+    -webkit-transition-property: fill;
+    transition-property: fill;
+  }
   .header__fb-icon:hover path {
     fill: #f0145a;
   }
@@ -701,6 +717,7 @@ a:hover {
   }
   .header__menu-item a.active {
     border-bottom: 2px solid #f0145a;
+    color: #f0145a;
     padding-bottom: 3px;
   }
   .header__menu-link {
@@ -710,17 +727,31 @@ a:hover {
     line-height: 20px;
     padding: 0 0 3px;
     border-radius: 0;
+    -webkit-transition-duration: 300ms;
+            transition-duration: 300ms;
+    -webkit-transition-property: all;
+    transition-property: all;
+  }
+  .header__menu-link_on-dark {
+    color: #ffffff;
+  }
+  .header__menu-link_on-dark:hover {
+    background-color: transparent;
+    border-bottom: 2px solid #ffffff;
+    color: #ffffff;
+  }
+  .header__menu-link_on-white {
+    color: #24a3ff;
+  }
+  .header__menu-link_on-white:hover {
+    background-color: transparent;
+    border-bottom: 2px solid #24a3ff;
+    color: #24a3ff;
   }
   .header__menu-link:active {
     background-color: transparent;
     border-bottom: 2px solid #f0145a;
     color: #f0145a;
-  }
-  .header__menu-link_on-dark {
-    color: #ffffff;
-  }
-  .header__menu-link_on-white {
-    color: #24a3ff;
   }
 }
 
