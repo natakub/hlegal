@@ -1,0 +1,17 @@
+.address {
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: $FontRegular;
+
+    &_white {
+        color: $colorWhite;
+    }
+
+    &_grey {
+        color: $colorText;
+    }
+
+    &_dark-blue {
+        color: $colorMainAlt;
+    }
+}

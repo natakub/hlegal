@@ -1,0 +1,86 @@
+.team-list {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &__title {
+        @include gradientTitle;
+        padding-bottom: 30px;
+    }
+
+    &__list {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    &__item {
+        margin: 0 auto;
+        max-width: 500px;
+        padding-bottom: 30px;
+    }
+
+    &__img {
+        border-radius: 12px;
+        height: 300px;
+    }
+
+    &__text-content {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 15px;
+    }
+
+    &__name {
+        color: $colorMainRegular;
+        padding-bottom: 5px;
+    }
+
+    &__info {
+        @include textContent($fs: 14px, $lh: 22px, $color: $colorText);
+    }
+
+    &__link {
+        &:hover path {
+            stroke: $colorAccent;
+            transition-duration: 300ms;
+            transition-property: stroke;
+        }
+
+        &:hover circle {
+            fill: $colorBgAlt;
+            transition-duration: 300ms;
+            transition-property: fill;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .team-list {
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        &__title {
+            padding-bottom: 60px;
+        }
+
+        &__list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 60px;
+            row-gap: 60px;
+        }
+
+        &__item {
+            padding: 0;
+        }
+
+        &__img {
+            height: 400px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .team-list__list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

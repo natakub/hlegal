@@ -1,0 +1,20 @@
+@media (min-width: 768px) {
+    .dot-separator {
+        display: inline-flex;
+        align-items: center;
+
+        &::before {
+            content: "";
+            background-color: $colorSeparator;
+            border-radius: 50%;
+            width: 6px;
+            height: 6px;
+            margin: 0 6px;
+        }
+
+        &_dark-grey::before {
+            background-color: $colorText;
+            margin: 0 10px;
+        }
+    }
+}

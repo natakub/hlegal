@@ -1,0 +1,47 @@
+.top-gradient-wrap {
+    background: $gradientBackground no-repeat center;
+    background-size: cover;
+    position: relative;
+    border-radius: 0 0 12px 12px;
+    margin-bottom: 20px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 20px;
+        right: 20px;
+        background-color: $colorShadowGrey;
+        border-radius: 0 0 12px 12px;
+        height: 10px;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: -20px;
+        left: 40px;
+        right: 40px;
+        background-color: $colorShadowLightGrey;
+        border-radius: 0 0 12px 12px;
+        height: 20px;
+    }
+
+    &_img {
+        background: url(../img/h-symbol.svg) no-repeat center top,
+            $gradientBackground;
+        background-size: 523px 600px, cover;
+
+        @media (min-width: 768px) {
+            background-size: 893px 1024px, cover;
+        }
+
+        @media (min-width: 992px) {
+            background-size: 669px 768px, cover;
+        }
+
+        @media (min-width: 1201px) {
+            background-size: 697px 799px, cover;
+        }
+    }
+}

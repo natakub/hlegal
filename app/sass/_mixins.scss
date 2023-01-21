@@ -1,0 +1,32 @@
+@mixin gradientTitle {
+    background: $gradientRedText;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+@mixin gradientTabs {
+    background: $gradientTabs;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+@mixin gradientText($fs: 36px, $lh: 44px) {
+    font-size: $fs;
+    line-height: $lh;
+    background: $gradientRedText;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+@mixin textContent($fs: 19px, $lh: 30px, $color: $colorBlack) {
+    color: $color;
+    font-weight: $FontRegular;
+    font-size: $fs;
+    line-height: $lh;
+}

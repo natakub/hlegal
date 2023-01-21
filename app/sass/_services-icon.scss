@@ -1,0 +1,48 @@
+.services-icon {
+    &::before {
+        content: "";
+        display: block;
+        background-color: $colorWhite;
+        background-position: center center;
+        background-repeat: no-repeat;
+        border-radius: 24px;
+        margin-bottom: 30px;
+        width: 92px;
+        height: 92px;
+        pointer-events: none;
+    }
+
+    &_01::before {
+        background-image: url(../img/ecommerce-icon.svg);
+    }
+
+    &_02::before {
+        background-image: url(../img/support-icon.svg);
+    }
+
+    &_03::before {
+        background-image: url(../img/corporate-icon.svg);
+    }
+
+    &_04::before {
+        background-image: url(../img/trust-icon.svg);
+    }
+
+    &_05::before {
+        background-image: url(../img/protection-icon.svg);
+    }
+
+    &_06::before {
+        background-image: url(../img/court-icon.svg);
+    }
+
+    &_main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &::before {
+            margin-bottom: 28px;
+        }
+    }
+}

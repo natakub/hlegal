@@ -1,0 +1,42 @@
+.about-quality {
+    padding: 30px 30px 60px 30px;
+
+    &__text {
+        @include textContent;
+
+        p {
+            padding-bottom: 30px;
+        }
+    }
+
+    &__title {
+        @include gradientTitle;
+    }
+}
+
+@media (min-width: 768px) {
+    .about-quality {
+        padding: 60px 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    .about-quality {
+        display: flex;
+        max-width: 1080px;
+
+        &__text {
+            max-width: 482px;
+        }
+
+        &__title {
+            padding-left: 60px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .about-quality__text {
+        max-width: 658px;
+    }
+}

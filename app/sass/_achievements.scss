@@ -1,0 +1,60 @@
+.achievements {
+    background-color: $colorBg;
+    padding: 30px 0;
+
+    &__slider {
+        list-style: none;
+        padding: 0 0 30px 0;
+
+        .hide {
+            display: none;
+        }
+    }
+
+    &__slider-item {
+        position: relative;
+        background-color: $colorWhite;
+        border-radius: 12px;
+        margin: 0 auto;
+        max-width: 435px;
+        width: 100%;
+        height: 90px;
+    }
+
+    &__slider-item.active {
+        display: block;
+    }
+
+    &__slider-img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 40px;
+        width: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .achievements {
+        &__slider {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            column-gap: 40px;
+
+            .hide {
+                display: block;
+            }
+        }
+
+        &__dots .hide {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .achievements__slider-img {
+        height: 60px;
+    }
+}

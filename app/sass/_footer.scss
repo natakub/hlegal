@@ -1,0 +1,117 @@
+.footer {
+    background-color: $colorBg;
+    text-align: center;
+
+    &__box {
+        padding: 30px 0;
+        border-top: 4px solid $colorSeparator;
+
+        &_no-border {
+            border-top: none;
+        }
+    }
+
+    &__address-item {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__map-link {
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 15px;
+        text-transform: uppercase;
+        padding-top: 10px;
+    }
+
+    &__contact-item {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 21px;
+        padding-bottom: 30px;
+    }
+
+    &__fb-link {
+        margin-bottom: 10px;
+        font-size: 0;
+
+        a {
+            display: block;
+        }
+
+        &:hover path {
+            fill: $colorAccent;
+        }
+    }
+
+    &__phone {
+        padding-bottom: 10px;
+    }
+
+    &__copyright-text {
+        color: $colorText;
+        font-size: 16px;
+        font-weight: $FontRegular;
+        line-height: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer {
+        &__wrap {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        &__address-item {
+            flex-direction: row;
+        }
+
+        &__map-link {
+            padding-top: 0;
+        }
+
+        &__contact-item {
+            flex-direction: row;
+        }
+
+        &__fb-link {
+            margin: 0;
+        }
+
+        &__phone {
+            padding: 0;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .footer {
+        text-align: start;
+
+        &__wrap {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            grid-template-rows: min-content min-content;
+            max-width: none;
+        }
+
+        &__address-item {
+            justify-content: flex-start;
+        }
+
+        &__contact-item {
+            grid-column: -3 / -1;
+            grid-row: 2 / -1;
+            justify-content: flex-start;
+            padding-bottom: 0;
+        }
+
+        &__copyright-text {
+            grid-column: 2 / 3;
+            grid-row: -3 / -2;
+        }
+    }
+}

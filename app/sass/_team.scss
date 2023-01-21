@@ -1,0 +1,71 @@
+.team {
+    padding-top: 30px;
+    padding-bottom: 60px;
+
+    &__slider {
+        background-color: $colorBgAlt;
+        border-radius: 12px;
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 30px;
+    }
+
+    &__slider-item {
+        display: none;
+    }
+
+    &__slider-item.active {
+        display: block;
+    }
+
+    &__slider-img {
+        border-radius: 12px 12px 0 0;
+        height: 500px;
+    }
+
+    &__slider-content {
+        padding: 30px 30px;
+    }
+
+    &__slider-text {
+        @include gradientTitle;
+        padding: 5px 0 30px 0;
+    }
+
+    &__person-name {
+        color: $colorText;
+        font-size: 16px;
+        line-height: 20px;
+        padding-bottom: 6px;
+    }
+
+    &__person-info {
+        color: $colorText;
+        font-weight: $FontRegular;
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+@media (min-width: 768px) {
+    .team {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+@media (min-width: 992px) {
+    .team {
+        &__slider-item.active {
+            display: grid;
+            grid-template-columns: min-content 1fr;
+        }
+
+        &__slider-img {
+            border-radius: 12px 0 0 12px;
+            height: 100%;
+            width: 400px;
+            object-fit: none;
+        }
+    }
+}

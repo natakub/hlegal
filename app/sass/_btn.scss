@@ -1,0 +1,29 @@
+.btn {
+    display: block;
+    margin: 0 auto;
+    background-color: $colorLink;
+    box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+    border: none;
+    border-radius: 12px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 18px 30px;
+    text-align: center;
+    transition-duration: 300ms;
+    transition-property: background-color;
+
+    &:hover {
+        background-color: $colorBtnHover;
+    }
+
+    &:active {
+        background-color: $colorBtnActive;
+    }
+
+    &_block {
+        display: block;
+        width: 100%;
+    }
+}

@@ -1,0 +1,88 @@
+.clients {
+    &__list {
+        list-style: none;
+        padding-left: 0;
+
+        .hide {
+            display: none;
+        }
+    }
+
+    &__item {
+        position: relative;
+        width: 100%;
+        height: 120px;
+
+        &_01 {
+            background-color: $colorBlue1Bg;
+        }
+
+        &_02 {
+            background-color: $colorDarkGreenBg;
+        }
+
+        &_03 {
+            background-color: $colorOrange1Bg;
+        }
+
+        &_04 {
+            background-color: $colorVioletBg;
+        }
+
+        &_05 {
+            background-color: $colorOrange2Bg;
+        }
+
+        &_06 {
+            background-color: $colorLightGreyBg;
+        }
+
+        &_07 {
+            background-color: $colorRedBg;
+        }
+
+        &_08 {
+            background-color: $colorLightGreenBg;
+        }
+
+        &_09 {
+            background-color: $colorLightBiegeBg;
+        }
+
+        &_10 {
+            background-color: $colorDarkBlueBg;
+        }
+
+        &_11 {
+            background-color: $colorBlue2Bg;
+        }
+
+        &_12 {
+            background-color: $colorBlack;
+        }
+    }
+
+    &__img-logo {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (min-width: 768px) {
+    .clients__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        .hide {
+            display: block;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .clients__list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

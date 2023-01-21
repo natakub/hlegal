@@ -1,0 +1,36 @@
+.btn-burger {
+    background-color: transparent;
+    border: none;
+    width: 32px;
+    height: 32px;
+
+    &:active {
+        border-radius: 8px;
+    }
+
+    &:focus {
+        background-image: url(../img/close-menu.svg);
+    }
+
+    &_white {
+        background-image: url(../img/hamburger-white.svg);
+
+        &:active {
+            background-color: $colorTransparentHover;
+        }
+    }
+
+    &_dark {
+        background-image: url(../img/Hamburger-dark.svg);
+
+        &:active {
+            background-color: $colorSeparator;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .btn-burger {
+        display: none;
+    }
+}

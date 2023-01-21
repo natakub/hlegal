@@ -1,0 +1,16 @@
+.phone {
+    font-size: 16px;
+    line-height: 20px;
+
+    &_white {
+        color: $colorWhite;
+    }
+
+    &_grey {
+        color: $colorText;
+    }
+
+    &_dark-blue {
+        color: $colorMainAlt;
+    }
+}

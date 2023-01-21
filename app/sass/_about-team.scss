@@ -1,0 +1,60 @@
+.about-team {
+    position: relative;
+    background: url(../img/about-team-768.jpg) no-repeat center,
+        $gradientBgAboutTeam;
+    background-size: cover;
+    height: 144px;
+
+    &__text {
+        position: absolute;
+        color: $colorWhite;
+        font-weight: 700;
+        font-size: 36px;
+        letter-spacing: 13px;
+        line-height: 44px;
+        padding-left: 13px;
+        text-align: center;
+        text-transform: uppercase;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (min-width: 768px) {
+    .about-team {
+        background-image: url(../img/about-team-992.jpg);
+        height: 233px;
+
+        &__text {
+            font-size: 46px;
+            letter-spacing: 63px;
+            padding-left: 63px;
+            line-height: 56px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .about-team {
+        background-image: url(../img/about-team-1200.jpg);
+        height: 311px;
+
+        &__text {
+            font-size: 86px;
+            line-height: 105px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .about-team {
+        background-image: url(../img/about-team-1920.jpg);
+        height: 438px;
+
+        &__text {
+            font-size: 96px;
+            line-height: 117px;
+        }
+    }
+}

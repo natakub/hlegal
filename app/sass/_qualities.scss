@@ -1,0 +1,112 @@
+.qualities {
+    margin: 0 auto;
+    max-width: 1080px;
+    padding-top: 30px;
+
+    &__tab-switcher {
+        display: grid;
+        grid-template-columns: repeat(4, min-content);
+        column-gap: 30px;
+        overflow: auto;
+        width: calc(100vw - 60px);
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        padding: 0 0 30px 0;
+        margin: 0 0 30px 0;
+        border-bottom: 4px solid $colorBorder;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    &__button {
+        border: none;
+        background-color: transparent;
+        color: $colorText;
+        cursor: pointer;
+        font-size: 30px;
+        font-weight: $fontMain;
+        line-height: 37px;
+        padding: 0;
+        white-space: nowrap;
+
+        &:active {
+            @include gradientTabs;
+        }
+    }
+
+    &__button.active {
+        @include gradientTabs;
+    }
+
+    &__tab-content {
+        display: none;
+    }
+
+    &__tab-content.active {
+        display: block;
+    }
+
+    &__tab-title {
+        color: $colorWhite;
+        font-size: 20px;
+        line-height: 24px;
+        padding-bottom: 30px;
+    }
+
+    &__tab-text {
+        color: $colorWhite;
+        font-size: 19px;
+        font-weight: $FontRegular;
+        line-height: 30px;
+    }
+}
+
+@media (min-width: 768px) {
+    .qualities {
+        padding-top: 60px;
+
+        &__tab-switcher {
+            padding: 0 0 60px 0;
+            margin: 0 0 60px 0;
+        }
+
+        &__button {
+            font-size: 38px;
+            line-height: 46px;
+        }
+
+        &__tab-title {
+            font-size: 30px;
+            line-height: 37px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .qualities {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        align-items: center;
+
+        &__tab-switcher {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            border-bottom: none;
+            border-right: 4px solid $colorBorder;
+            margin: 0 60px 0 0;
+            padding: 0 60px 0 0;
+            width: auto;
+        }
+
+        &__button {
+            margin: 15px 0;
+
+            &:hover {
+                @include gradientTabs;
+            }
+        }
+    }
+}

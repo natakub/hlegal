@@ -1,0 +1,94 @@
+.publications {
+    background-color: $colorBg;
+    padding: 30px 0 15px 0;
+
+    &__title {
+        @include gradientTitle;
+        padding-top: 5px;
+        padding-bottom: 15px;
+    }
+
+    &__list {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    &__item-wrap {
+        padding: 15px 0;
+    }
+
+    &__item {
+        background-color: $colorWhite;
+        border-radius: 8px;
+        height: 100%;
+    }
+
+    &__img {
+        border-radius: 8px 8px 0px 0px;
+        height: 200px;
+    }
+
+    &__text-wrap {
+        padding: 30px 30px;
+    }
+
+    &__link {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    &__date {
+        border-bottom: 4px solid $colorSeparator;
+        color: $colorText;
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 15px;
+        padding: 15px 0;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        color: $colorBlack;
+        font-weight: $FontRegular;
+        font-size: 14px;
+        line-height: 22px;
+        padding-top: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .publications {
+        padding: 30px 0 30px 0;
+
+        &__title {
+            padding-top: 10px;
+        }
+
+        &__list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 30px;
+            row-gap: 30px;
+        }
+
+        &__item-wrap {
+            padding: 0;
+
+            &_03 {
+                grid-column: span 2;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .publications {
+        &__list {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        &__item-wrap_03 {
+            grid-column: 3 / 4;
+        }
+    }
+}

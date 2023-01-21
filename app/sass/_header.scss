@@ -1,0 +1,246 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    grid-template-rows: min-content min-content;
+    align-items: center;
+
+    &__address,
+    &__fb-icon {
+        display: none;
+    }
+
+    &__top-line {
+        grid-column: 1 / -1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 -15px;
+        padding: 15px 15px;
+
+        &_on-dark {
+            background-color: $colorTransparentBg;
+        }
+
+        &_on-white {
+            background-color: $colorBg;
+        }
+    }
+
+    &__lang {
+        display: flex;
+        padding-left: 0;
+        list-style: none;
+    }
+
+    &__lang-item {
+        a.active {
+            background-color: $colorAccent;
+            color: $colorWhite;
+        }
+    }
+
+    &__lang-link {
+        display: block;
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 15px;
+        padding: 5px 7px;
+        border-radius: 6px;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &_on-dark {
+            color: $colorWhite;
+
+            &:hover {
+                background-color: $colorTransparentHover;
+            }
+        }
+
+        &_on-white {
+            color: $colorText;
+
+            &:hover {
+                background-color: $colorBg;
+            }
+        }
+    }
+
+    &__logo-box {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &__menu {
+        padding: 12px 0;
+    }
+
+    &__menu-list {
+        position: absolute;
+        right: 0;
+        top: 114px;
+        width: 100%;
+        overflow: auto;
+        height: calc(100vh - 114px);
+        display: none;
+    }
+
+    &__menu-list-wrap {
+        background-color: $colorWhite;
+        padding: 12px 12px;
+        list-style: none;
+    }
+
+    &__menu-item {
+        padding: 7px 0;
+    }
+
+    &__menu-link {
+        display: block;
+        background-color: $colorBg;
+        border-radius: 12px;
+        color: $colorLink;
+        font-size: 24px;
+        line-height: 29px;
+        padding: 7px 0;
+        text-align: center;
+
+        &:active {
+            background-color: $colorSeparator;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .header {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, min-content);
+        padding-top: 50px;
+
+        &__top-line {
+            justify-content: flex-start;
+            background-color: transparent;
+            padding: 0 0 15px 0;
+            margin: 0;
+        }
+
+        &__address {
+            display: inline-flex;
+        }
+
+        &__fb-icon {
+            display: inline-flex;
+            font-size: 0;
+
+            a {
+                display: block;
+            }
+
+            &:hover path {
+                fill: $colorAccent;
+            }
+        }
+
+        &__logo-box {
+            padding: 30px 0;
+        }
+
+        &__logo img {
+            width: 130px;
+            height: 60px;
+        }
+
+        &__menu {
+            padding: 0;
+        }
+
+        &__menu-list {
+            position: static;
+            display: block;
+            width: auto;
+            height: auto;
+            overflow: visible;
+        }
+
+        &__menu-list-wrap {
+            display: flex;
+            background-color: transparent;
+            margin: 0 -7px;
+            padding: 0;
+        }
+
+        &__menu-item {
+            background-color: transparent;
+            padding: 0 7px;
+
+            a.active {
+                border-bottom: 2px solid $colorAccent;
+                padding-bottom: 3px;
+            }
+        }
+
+        &__menu-link {
+            background-color: transparent;
+            border-bottom: 2px solid transparent;
+            font-size: 16px;
+            line-height: 20px;
+            padding: 0 0 3px;
+            border-radius: 0;
+
+            &:active {
+                background-color: transparent;
+                border-bottom: 2px solid $colorAccent;
+                color: $colorAccent;
+            }
+
+            &_on-dark {
+                color: $colorWhite;
+            }
+
+            &_on-white {
+                color: $colorLink;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .header {
+        align-items: center;
+        grid-template-columns: 1fr auto;
+        grid-template-rows: min-content min-content;
+
+        &__top-line {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+            align-self: end;
+            padding: 0 0 8px 0;
+        }
+
+        &__logo-box {
+            grid-column: 1 / 2;
+            grid-row: 1 / -1;
+            padding: 0;
+        }
+
+        &__menu {
+            align-self: start;
+            justify-self: end;
+            padding: 8px 0 0 0;
+        }
+
+        &__menu-link {
+            &_on-dark:hover {
+                border-bottom: 2px solid $colorWhite;
+            }
+
+            &_on-white:hover {
+                border-bottom: 2px solid $colorLink;
+            }
+
+            &:active {
+                border-bottom: 2px solid $colorAccent;
+            }
+        }
+    }
+}

@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    width: 100%;
+}
+
+.body {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: $fontMain;
+    min-width: 375px;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1320px;
+    min-width: 375px;
+    width: 100%;
+
+    &_xs {
+        padding: 0 60px;
+    }
+
+    &_sm {
+        padding: 0 30px;
+    }
+
+    &_md {
+        padding: 0 15px;
+
+        @media (min-width: 768px) {
+            padding: 0 30px;
+        }
+    }
+
+    &_lg {
+        max-width: 1720px;
+    }
+}
+
+.img-responsive {
+    height: auto;
+    max-width: 100%;
+}
+
+.img-fit-cover {
+    width: 100%;
+    object-fit: cover;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+a {
+    color: $colorLink;
+    text-decoration: none;
+    transition-duration: 300ms;
+    transition-property: color;
+
+    &:hover {
+        color: $colorAccent;
+    }
+}

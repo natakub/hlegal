@@ -1,0 +1,69 @@
+.send-message-form {
+    position: relative;
+    margin: 70px auto 0;
+    background-color: $colorBg;
+    padding: 30px;
+
+    &__title {
+        @include gradientTitle;
+        padding-bottom: 30px;
+        padding-right: 42px;
+    }
+
+    &__form p {
+        padding-bottom: 15px;
+    }
+
+    &__input {
+        @include textContent;
+        background-color: $colorWhite;
+        border: 1px solid $colorWhite;
+        border-radius: 8px;
+        outline: none;
+        padding: 15px 15px;
+        width: 100%;
+
+        &::placeholder {
+            font-family: "Montserrat", "Arial", sans-serif;
+            font-weight: $FontRegular;
+            font-size: 16px;
+            line-height: 26px;
+            color: $colorText;
+        }
+    }
+
+    &__feedback {
+        color: $colorText;
+        border: none;
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 17px;
+        margin-top: 15px;
+        padding: 15px 0 15px 0;
+        text-transform: uppercase;
+    }
+
+    &__btn-close {
+        position: absolute;
+        background-image: url(../img/close-menu.svg);
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: center center;
+        border: none;
+        width: 32px;
+        height: 32px;
+        right: 30px;
+        top: 30px;
+
+        &:hover {
+            background-color: $colorSeparator;
+            border-radius: 8px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .send-message-form {
+        border-radius: 12px;
+    }
+}
